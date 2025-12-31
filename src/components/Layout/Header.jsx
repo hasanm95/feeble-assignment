@@ -1,4 +1,6 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
+import { NAV_LINKS } from "../../constants/navigation";
+import Button from "../UI/Button";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -26,35 +28,20 @@ const Header = () => {
           <img src="/assets/logo.svg" alt="coup. logo" className="h-7 md:h-8" />
         </div>
         <nav className="hidden md:flex gap-8">
-          <a
-            href="#how-it-works"
-            className="no-underline text-muted text-base font-medium transition-colors hover:text-primary"
-          >
-            How It Works
-          </a>
-          <a
-            href="#pricing"
-            className="no-underline text-muted  text-base font-medium transition-colors hover:text-primary"
-          >
-            Pricing
-          </a>
-          <a
-            href="#use-case"
-            className="no-underline text-muted  text-base font-medium transition-colors hover:text-primary"
-          >
-            Use Case
-          </a>
-          <a
-            href="#faq"
-            className="no-underline text-muted  text-base font-medium transition-colors hover:text-primary"
-          >
-            FAQ
-          </a>
+          {NAV_LINKS.map((link) => (
+            <a
+              key={link.href}
+              href={link.href}
+              className="no-underline text-muted text-base font-medium transition-colors hover:text-primary"
+            >
+              {link.label}
+            </a>
+          ))}
         </nav>
         <div className="flex items-center gap-3">
-          <button className="hidden md:block leading-[1.2] bg-primary text-white py-[11px] px-[18px] rounded-full text-base font-medium transition-all hover:bg-primary-hover hover:-translate-y-0.5 hover:shadow-[0_8px_20px_rgba(0,122,255,0.25)]">
-            Contact Sales
-          </button>
+          <div className="hidden md:block">
+            <Button variant="header">Contact Sales</Button>
+          </div>
           <button
             className="flex md:hidden items-center justify-center w-8 h-8 relative z-[2000]"
             aria-label="Toggle navigation"
@@ -76,40 +63,19 @@ const Header = () => {
         }`}
       >
         <div className="flex flex-col gap-8 items-center">
-          <a
-            href="#how-it-works"
-            className="no-underline text-dark text-2xl font-bold"
-            onClick={closeMenu}
-          >
-            How It Works
-          </a>
-          <a
-            href="#pricing"
-            className="no-underline text-dark text-2xl font-bold"
-            onClick={closeMenu}
-          >
-            Pricing
-          </a>
-          <a
-            href="#use-case"
-            className="no-underline text-dark text-2xl font-bold"
-            onClick={closeMenu}
-          >
-            Use Case
-          </a>
-          <a
-            href="#faq"
-            className="no-underline text-dark text-2xl font-bold"
-            onClick={closeMenu}
-          >
-            FAQ
-          </a>
-          <button
-            className="leading-[1.2] py-3 px-7 bg-primary text-white rounded-full text-base font-medium transition-all hover:bg-primary-hover hover:-translate-y-0.5 hover:shadow-[0_8px_20px_rgba(0,122,255,0.25)]"
-            onClick={closeMenu}
-          >
+          {NAV_LINKS.map((link) => (
+            <a
+              key={link.href}
+              href={link.href}
+              className="no-underline text-dark text-2xl font-bold"
+              onClick={closeMenu}
+            >
+              {link.label}
+            </a>
+          ))}
+          <Button variant="primary" onClick={closeMenu}>
             Contact Sales
-          </button>
+          </Button>
         </div>
       </div>
     </header>
