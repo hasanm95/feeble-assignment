@@ -73,7 +73,7 @@ const Hero = () => {
           <span>#1 iMessage Automation Tool</span>
         </div>
 
-        <h1 className="text-[2.25rem] md:text-[2.75rem] lg:text-[4rem] leading-[1.2] font-bold mb-6 text-text-dark">
+        <h1 className="text-[2.25rem] md:text-[2.75rem] lg:text-[4rem] leading-[1.2] font-bold mb-6 text-dark">
           <span className="text-primary">iMessage</span> Automation
           <br />
           for Teams and AI <br />
@@ -89,14 +89,14 @@ const Hero = () => {
           <button className="w-full md:w-auto max-w-[320px] md:max-w-none py-3 px-7 rounded-full text-[0.95rem] md:text-[1.125rem] font-medium cursor-pointer transition-all duration-250 ease-out bg-primary text-white border border-transparent hover:bg-primary-hover hover:-translate-y-0.5 hover:shadow-[0_8px_20px_rgba(0,122,255,0.25)] whitespace-nowrap">
             Get Started
           </button>
-          <button className="w-full md:w-[265px] max-w-[320px] md:max-w-none py-3 px-7 rounded-full text-[0.95rem] md:text-[1.125rem] font-medium cursor-pointer transition-all duration-250 ease-out bg-transparent text-text-dark border border-[#6c788f] flex items-center justify-center gap-[0.6rem] hover:bg-[#f9fafb] hover:border-[#d1d5db] hover:-translate-y-0.5 hover:shadow-[0_8px_20px_rgba(0,0,0,0.05)] whitespace-nowrap">
+          <button className="w-full md:w-[265px] max-w-[320px] md:max-w-none py-3 px-7 rounded-full text-[0.95rem] md:text-[1.125rem] font-medium cursor-pointer transition-all duration-250 ease-out bg-transparent text-dark border border-[#6c788f] flex items-center justify-center gap-[0.6rem] hover:bg-[#f9fafb] hover:border-[#d1d5db] hover:-translate-y-0.5 hover:shadow-[0_8px_20px_rgba(0,0,0,0.05)] whitespace-nowrap">
             <img src="/assets/apple.svg" alt="Apple logo" className="w-[18px] h-[18px]" />
             <span className="border-l border-[#6c788f] pl-2">Download the Mac app</span>
           </button>
         </div>
       </div>
 
-      <div className="absolute bottom-8 flex flex-col items-center gap-2 text-text-muted text-sm animate-bounce-custom">
+      <div className="absolute bottom-8 flex flex-col items-center gap-2 text-muted text-sm animate-bounce-custom">
         <span>Scroll to learn more</span>
         <img
           src="/assets/arrow-down-04.svg"

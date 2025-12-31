@@ -4,9 +4,9 @@
   --color-primary: #007aff;
   --color-primary-hover: #0066d6;
   --color-primary-light: #eff6ff;
-  --color-text-dark: #1d2026;
-  --color-text-muted: #8c97a8;
-  --color-text-secondary: #6c788f;
+  --color-dark: #1d2026;
+  --color-muted: #8c97a8;
+  --color-secondary: #6c788f;
 
   --font-sans: "General Sans", system-ui, -apple-system, sans-serif;
 

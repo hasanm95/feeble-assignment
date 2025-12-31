@@ -28,31 +28,31 @@ const Header = () => {
         <nav className="hidden md:flex gap-8">
           <a
             href="#how-it-works"
-            className="no-underline color-text-muted text-base font-medium transition-colors hover:text-primary"
+            className="no-underline text-muted text-base font-medium transition-colors hover:text-primary"
           >
             How It Works
           </a>
           <a
             href="#pricing"
-            className="no-underline color-text-muted text-base font-medium transition-colors hover:text-primary"
+            className="no-underline text-muted  text-base font-medium transition-colors hover:text-primary"
           >
             Pricing
           </a>
           <a
             href="#use-case"
-            className="no-underline color-text-muted text-base font-medium transition-colors hover:text-primary"
+            className="no-underline text-muted  text-base font-medium transition-colors hover:text-primary"
           >
             Use Case
           </a>
           <a
             href="#faq"
-            className="no-underline color-text-muted text-base font-medium transition-colors hover:text-primary"
+            className="no-underline text-muted  text-base font-medium transition-colors hover:text-primary"
           >
             FAQ
           </a>
         </nav>
         <div className="flex items-center gap-3">
-          <button className="hidden md:block bg-primary text-white py-[11px] px-[18px] rounded-full text-base font-medium transition-all hover:bg-primary-hover hover:-translate-y-0.5 hover:shadow-[0_8px_20px_rgba(0,122,255,0.25)]">
+          <button className="hidden md:block leading-[1.2] bg-primary text-white py-[11px] px-[18px] rounded-full text-base font-medium transition-all hover:bg-primary-hover hover:-translate-y-0.5 hover:shadow-[0_8px_20px_rgba(0,122,255,0.25)]">
             Contact Sales
           </button>
           <button
@@ -61,7 +61,7 @@ const Header = () => {
             onClick={toggleMenu}
           >
             <span
-              className={`block w-6 h-[2px] bg-text-dark relative transition-all before:content-[''] before:absolute before:w-6 before:h-[2px] before:bg-text-dark before:-top-2 before:transition-all after:content-[''] after:absolute after:w-6 after:h-[2px] after:bg-text-dark after:-bottom-2 after:transition-all ${
+              className={`block w-6 h-[2px] bg-dark relative transition-all before:content-[''] before:absolute before:w-6 before:h-[2px] before:bg-dark before:-top-2 before:transition-all after:content-[''] after:absolute after:w-6 after:h-[2px] after:bg-dark after:-bottom-2 after:transition-all ${
                 isMenuOpen
                   ? "bg-transparent before:rotate-45 before:top-0 after:-rotate-45 after:bottom-0"
                   : ""
@@ -78,34 +78,34 @@ const Header = () => {
         <div className="flex flex-col gap-8 items-center">
           <a
             href="#how-it-works"
-            className="no-underline text-text-dark text-2xl font-bold"
+            className="no-underline text-dark text-2xl font-bold"
             onClick={closeMenu}
           >
             How It Works
           </a>
           <a
             href="#pricing"
-            className="no-underline text-text-dark text-2xl font-bold"
+            className="no-underline text-dark text-2xl font-bold"
             onClick={closeMenu}
           >
             Pricing
           </a>
           <a
             href="#use-case"
-            className="no-underline text-text-dark text-2xl font-bold"
+            className="no-underline text-dark text-2xl font-bold"
             onClick={closeMenu}
           >
             Use Case
           </a>
           <a
             href="#faq"
-            className="no-underline text-text-dark text-2xl font-bold"
+            className="no-underline text-dark text-2xl font-bold"
             onClick={closeMenu}
           >
             FAQ
           </a>
           <button
-            className="py-3 px-7 bg-primary text-white rounded-full text-base font-medium transition-all hover:bg-primary-hover hover:-translate-y-0.5 hover:shadow-[0_8px_20px_rgba(0,122,255,0.25)]"
+            className="leading-[1.2] py-3 px-7 bg-primary text-white rounded-full text-base font-medium transition-all hover:bg-primary-hover hover:-translate-y-0.5 hover:shadow-[0_8px_20px_rgba(0,122,255,0.25)]"
             onClick={closeMenu}
           >
             Contact Sales
